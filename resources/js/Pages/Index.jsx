@@ -19,7 +19,7 @@ export default function Index() {
                     I focus on delivering efficient, user-friendly solution
                 </p>
                 <div className='flex items-center gap-2 sm:gap-4'>
-                    <a href="#" className='bg-violet-700 sm:p-4 md:p-3 p-2 rounded-2xl hover:bg-violet-500 sm:hover:bg-violet-500'>
+                    <a href="/public/files/CV-Muhammad Afifullah.pdf" className='bg-violet-700 sm:p-4 md:p-3 p-2 rounded-2xl hover:bg-violet-500 sm:hover:bg-violet-500'>
                         Donwload CV <i class="ri-download-2-fill ri-lg"></i>
                     </a>
 
