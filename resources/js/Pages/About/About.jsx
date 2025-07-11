@@ -1,7 +1,16 @@
 import MainLayout from "@/Layouts/MainLayout"
 
+function handleDownload() {
+  const link = document.createElement('a');
+  link.href = '/files/CV.pdf';
+  link.download = 'My_CV.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 export default function About() {
   return (
+
     <>
       <MainLayout>
         {/* Personal Info */}
@@ -46,7 +55,7 @@ export default function About() {
                 </div>
 
                 <div className="mt-6">
-                  <button className="flex items-center gap-3 px-6 py-2 rounded-full border border-teal-400 text-teal-300 hover:bg-teal-500 hover:text-white transition-colors duration-300">
+                  <button onClick={handleDownload} className="flex items-center gap-3 px-6 py-2 rounded-full border border-teal-400 text-teal-300 hover:bg-teal-500 hover:text-white transition-colors duration-300">
                     <span className="font-semibold text-lg">Download CV</span>
                     <span className="flex items-center justify-center w-9 h-9 rounded-full bg-teal-500 text-white hover:bg-white hover:text-teal-500 transition-colors duration-300">
                       <i className="ri-download-2-fill"></i>

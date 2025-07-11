@@ -1,4 +1,4 @@
-import HeroImage from "/public/assets/saya.png";
+import HeroImage from "/public/assets/hero-img.webp";
 
 const Image = {
   HeroImage,
