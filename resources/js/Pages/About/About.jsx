@@ -2,7 +2,7 @@ import MainLayout from "@/Layouts/MainLayout"
 
 function handleDownload() {
   const link = document.createElement('a');
-  link.href = '/files/CV.pdf';
+  link.href = '/files/cv.pdf';
   link.download = 'My_CV.pdf';
   document.body.appendChild(link);
   link.click();
